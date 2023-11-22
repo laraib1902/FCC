@@ -14,7 +14,22 @@ hr{
 h1, h2{
   font-family:Impact, serif;
 }
-.item{
+.item p{
   display:inline-block;
   margin-top:5px;
   margin-bottom:2px;
+  font-size:18px
+}
+.flavor, dessert {
+  text-align:left;
+  width:75%
+}
+.price{
+  text-align:right;
+  width:25px
+}
+/*FOOTER*/
+  
+
+  
+  
