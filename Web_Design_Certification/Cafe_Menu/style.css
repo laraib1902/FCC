@@ -29,7 +29,17 @@ h1, h2{
   width:25px
 }
 /*FOOTER*/
+  .footer{
+    font-size:14px;
+  }
+.address{
+  margin-top:5px;
+}
+a{
+  color:black;
+}
   
+
 
   
   
