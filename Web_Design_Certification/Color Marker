@@ -6,3 +6,11 @@
 <title>Colored Marker</title>
 <link rel="stylesheet"href="style.css">
 </head>
+</body>
+<h1>Color Marker</h1>
+<div class="container"
+<div class="marker red"
+</div>
+<div class= "marker green"</div>
+<div  class= "marker blue">
+</div>
