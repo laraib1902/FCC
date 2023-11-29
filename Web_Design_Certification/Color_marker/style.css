@@ -6,5 +6,12 @@ h1{
   paddind:10px,0
 }
 .marker{
+  width:220px;
+  height:25px;
+  margin:10px,auto;
+}
+.red{
+  background-color:rgb(225,0,0);
+}
   
 
