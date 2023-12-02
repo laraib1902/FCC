@@ -11,7 +11,7 @@ h1{
   margin:10px,auto;
 }
 .red{
-  background-color:rgb(225,0,0);
+  background-color:linear-gradient(180deg,rgb(122,74,14)0%,rbg(245,62,113) 50%, rbg(164, 27,27) 100%) ;
 }
   
 
