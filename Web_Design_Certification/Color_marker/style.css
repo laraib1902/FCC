@@ -13,5 +13,11 @@ h1{
 .red{
   background-color:linear-gradient(180deg,rgb(122,74,14)0%,rbg(245,62,113) 50%, rbg(164, 27,27) 100%) ;
 }
+.green{
+  background-color:linera-gradient(#55680D, #71F53E, #116C31) ;
+}
+.blue{
+  baxkground-color:linear-gradient(hsl(186, 76%, 16%), hsl(223, 60%, 90%) , hal(240, 56%, 42%)) ;
+  
   
 
