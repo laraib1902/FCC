@@ -10,6 +10,16 @@ h1{
   height:25px;
   margin:10px,auto;
 }
+.cap{
+  width:60px;
+  height:25px;
+}
+.sleeve{
+  width:110px;
+  height:25px
+  background-color:rgba(255, 255,255,0.5) 
+  border-left:10px, solid black;
+}
 .red{
   background-color:linear-gradient(180deg,rgb(122,74,14)0%,rbg(245,62,113) 50%, rbg(164, 27,27) 100%) ;
 }
