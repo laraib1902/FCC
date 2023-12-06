@@ -26,7 +26,7 @@ cap,.sleeve{
     box-shadow: 0 0 20px 0 #3B7E20CC;
 }
 .blue{
-  baxkground-color:linear-gradient(hsl(186, 76%, 16%), hsl(223, 60%, 90%) , hal(240, 56%, 42%)) ;
+  background-color:linear-gradient(hsl(186, 76%, 16%), hsl(223, 60%, 90%) , hal(240, 56%, 42%)) ;
   
-    box-shadow: 0 0 20px 0 blue;
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8) ;
 
