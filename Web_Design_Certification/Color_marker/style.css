@@ -28,5 +28,5 @@ cap,.sleeve{
 .blue{
   baxkground-color:linear-gradient(hsl(186, 76%, 16%), hsl(223, 60%, 90%) , hal(240, 56%, 42%)) ;
   
-  
+    box-shadow: 0 0 20px 0 blue;
 
