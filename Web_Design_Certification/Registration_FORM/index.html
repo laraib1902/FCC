@@ -16,12 +16,14 @@
         </label>
         <label for="last-name">Enter Your Last Name:<input id="last-name"/></label>
         <label for="email">Enter your Email:<input id="email"/></label>
-        <label for="new password">Create a new password:<input id="email"/></label>
+        <label for="new password">Create a new password:<input id="new-password" type="password" pattern="[a-z0-5]{8,}" required/></label>
       </fieldset>
       <fieldset>
         <lable><input type ="radio" name ="account-type"/> Personal</lable>
         <lable><input type ="radio" name ="account-type"/> Business</lable>
       </fieldset>
-      <fieldset></fieldset>
+      <fieldset>
+        <legend>Account type (required) <label><input></label></legend>
+      </fieldset>
       <input type="submit" value="Submit"/>
   </body>
