@@ -47,6 +47,15 @@ inline{
   veticle-align:middle;
 }
 input[type="submit"]
+padding:1px 2px;
+}
+.inline{
+  display:inline;
+}
+a{
+  color:#dfdfe2;
+}
+  
 
   
   
