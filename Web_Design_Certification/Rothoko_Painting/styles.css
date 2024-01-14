@@ -5,3 +5,9 @@
   overflow:hidden;
   filter:blue(2px) ;
 }
+.frame{
+  width:500px;
+  border:50px solid black;
+  margin:20px auto;
+  paddling:50px;
+}
