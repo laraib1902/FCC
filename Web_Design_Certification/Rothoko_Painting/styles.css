@@ -29,5 +29,8 @@
   border-radius:8px 10px;
   transform:rotate(o.4deg) ;
 }
+.one .two{
+  filter:blur(1px) ;
+}
   
   
