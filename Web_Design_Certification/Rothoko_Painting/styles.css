@@ -37,4 +37,8 @@
  height:28%;
  background-color:#b20403;
 margin:auto;
+  filter:blur(2px) ;
+  blur:0 0 5px 5px #b02403;
+  border-radius:30px 25px 60px 12px;
+}
   
