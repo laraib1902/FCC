@@ -18,5 +18,5 @@ header{
   display:flex;
   flex-direction:row;
     flex-wrap:wrap;
-justify-content:
-  align-item:
+justify-content:center;
+  align-item:center;
