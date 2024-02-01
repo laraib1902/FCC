@@ -28,5 +28,5 @@ justify-content:center;
 gallery img{
   width:100px;
     max-width:350px;
-  height:
-  object-fit:
+  height:300px;
+  object-fit:cover;
