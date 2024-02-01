@@ -14,7 +14,7 @@ header{
   color:#fff;
     border-bottom:4px solid #fdb347;
 }
-.gallery {
+gallery {
   display:flex;
   flex-direction:row;
     flex-wrap:wrap;
