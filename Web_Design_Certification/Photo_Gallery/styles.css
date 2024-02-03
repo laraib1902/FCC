@@ -30,3 +30,5 @@ gallery img{
     max-width:350px;
   height:300px;
   object-fit:cover;
+  border-radius:10px;
+}
