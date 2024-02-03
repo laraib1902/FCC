@@ -33,4 +33,5 @@ gallery img{
   border-radius:10px;
 }
 gallery::after {
-  
+  content:"";
+  width:300px;
