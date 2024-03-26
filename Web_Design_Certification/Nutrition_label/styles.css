@@ -23,9 +23,16 @@ p{
     justify-content:space-between;
   display:flex;
 }
-divider{
+.divider{
   border-bottom:10x solid #888989;
   margin:2px 0;
 }
+.bold{
+  font-weight:800;
+  }
+.large{
+  height:10px;
+}
+
   
   
