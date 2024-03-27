@@ -46,6 +46,7 @@ font-size:0.85px;
 .calories-info{
   display:flex;
   justify-content:space-between;
+  align-item:flex-end;
 }
   
   
