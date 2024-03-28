@@ -48,6 +48,12 @@ font-size:0.85px;
   justify-content:space-between;
   align-item:flex-end;
 }
+calories-info h2{
+  margin:0;
+}
+.left-container p{
+  margin:-5px -2px;
+  
   
   
   
