@@ -64,6 +64,9 @@ calories-info h2{
 .right{
   justify-content:flex-end;
 }
+. indent {
+  margin: left;
+}
 
   
   
