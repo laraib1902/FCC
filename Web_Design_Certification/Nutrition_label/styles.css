@@ -65,8 +65,16 @@ calories-info h2{
   justify-content:flex-end;
 }
 . indent {
-  margin: left;
+  margin-left:1em;
+  
 }
+.double-indent{
+  margin-left:2em;
+}
+daily-value p:not(no-divider){
+  border-bottom:1px solid #
+  
+  
 
   
   
