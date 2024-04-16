@@ -56,3 +56,9 @@ nav> ul> li{
  padding:0.2rem;
  display: block;
 }
+nav > ul > li:hover{
+ background-color:#dfdfe2;
+ color:#1b1b32;
+ cursor: pointer;
+}
+ 
