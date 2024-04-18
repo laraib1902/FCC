@@ -61,4 +61,14 @@ nav > ul > li:hover{
  color:#1b1b32;
  cursor: pointer;
 }
- 
+li > a {
+ color: inherent;
+  text-deciration:none;
+}
+
+ main{
+  padding-top:50px;
+ }
+section {
+ width:80%;
+}
