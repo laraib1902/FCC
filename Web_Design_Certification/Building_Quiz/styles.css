@@ -71,4 +71,16 @@ li > a {
  }
 section {
  width:80%;
+   margin: 0 auto 10px auto;
+   max-width: 600px;
+ 
 }
+h1,h2{
+   font-family: Verdana, Tahoma;
+}
+h2{
+ border-bottom:4px solid #dfdfe2;
+  padding-top:0px;
+ margin-top:60px;
+}
+
