@@ -30,31 +30,56 @@ speed.textContent = data.stat[5] base_stat;
 types.innerHTML = data.types.map((obj) => `<span class="type ${obj.type.name}">${obj.type.name}</span>`,)
   .join("");
  } catch (err) {
-                                                                                                                              resetDisplay();
-                                                                                                                                  alert("Pokémon not found");
-                                                                                                                                      console.log(`Pokémon not found: ${err}`);
-                                                                                                                                        }
-                                                                                                                                        };
+                                                                                                                              
+  resetDisplay();
+                                                                                                                                  
+                                                                                                                                   
+  alert("Pokémon not found");
+                                                                                                                                      
+  console.log(`Pokémon not found: ${err}`);
+                                                                                                                                       
+}
+                                                                                                                                        
+};
 
-                                                                                                                                        const resetDisplay = () => {
-                                                                                                                                          const sprite = document.getElementById("sprite");
-                                                                                                                                            if (sprite) sprite.remove();
+                                                                                                                                        
+const resetDisplay = () => {
+                                                                                                                                         
+  const sprite = document.getElementById("sprite");
+                                                                                                                                            
+  if (sprite) sprite.remove();
 
                                                                                                                                           
-                                                                                                                                                pokemonName.textContent = "";
-                                                                                                                                                  pokemonID.textContent = "";
-                                                                                                                                                    types.innerHTML = "";
-                                                                                                                                                      height.textContent = "";
-                                                                                                                                                        weight.textContent = "";
-                                                                                                                                                          hp.textContent = "";
-                                                                                                                                                            attack.textContent = "";
-                                                                                                                                                              defense.textContent = "";
-                                                                                                                                                                specialAttack.textContent = "";
-                                                                                                                                                                  specialDefense.textContent = "";
-                                                                                                                                                                    speed.textContent = "";
-                                                                                                                                                                    };
+                                                                                                                                                
+  pokemonName.textContent = "";
+                                                                                                                                                  
+  pokemonID.textContent = "";
+                                                                                                                                                    
+  types.innerHTML = "";
+                                                                                                                                                     
+  height.textContent = "";
+                                                                                                                                                       
+  weight.textContent = "";
+                                                                                                                                                         
+  hp.textContent = "";
+                                                                                                                                                            
+  attack.textContent = "";
+                                                                                                                                                            
+  defense.textContent = "";
+                                                                                                                                                              
+  specialAttack.textContent = "";
+                                                                                                                                                                 
+  specialDefense.textContent = "";
+                                                                                                                                                                  
+  speed.textContent = "";
+                                                                                                                                                                  
+};
 
-                                                                                                                                                                    searchForm.addEventListener("submit", (e) => {
-                                                                                                                                                                      e.preventDefault();
-                                                                                                                                                                        getPokemon();
-                                                                                                                                                                        });
+                                                                                                                                                                  
+searchForm.addEventListener("submit", (e) => {
+                                                                                                                                                                    
+  e.preventDefault();
+                                                                                                                                                                       
+  getPokemon();
+                                                                                                                                                                    
+});
