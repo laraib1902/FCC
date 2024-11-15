@@ -1,1 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #0a0a23;
+  --section-bg-color: #ffffff;
+  --golden-yellow: #feac32;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+.start-screen {
+  background-color: var(--section-bg-color);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transfo<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Intermediate OOP by Building a Platformer Game</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="start-screen">
+      <h1 class="main-title">freeCodeCamp Code Warrior</h1>
+      <p class="instructions">
+        Help the main player navigate to the yellow checkpoints.
+      </p>
+      <p class="instructions">
+        Use the keyboaconst authorContainer = document.getElementById('author-container');
+const loadMoreBtn = document.getElementById('load-more-btn');
+
+let startingIndex = 0;
+let endingIndex = 8;
+let authorDataArr = [];
+
+fetch('https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json')
+  .then((res) => res.json())
+  .then((data) => {
+    authorDataArr = data;
+    displayAuthors(authorDataArr.slice(startingIndex, endingIndex));  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #1b1b32;
+  --light-grey: #f5f6f7;
+  --dark-purple: #5a01a7;
+  --golden-yellow: #feac32;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  text-align: center;
+}
+
+.title {
+  color: var(--light-grey);
+  margin: 20px 0;
+}
+
+#author-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-card {
+  border-radius: 15px;
+  width: 300px;
+  height: 350px;
+  background-color: var(--light-grey);
+  margin: 20px;
+}
+
+.user-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.purple-divider {
+  background-color: var(--dark-purple);
+  width: 100%;
+  height: 15px;
+}
+
+.author-name {
+  margin: 10px;
+}
+
+.bio {
+  margin: 20px;
+}
+
+.error-msg {
+  color: var(--light-grey);
+}
+
+.btn {
+  cursor: pointer;
+  width: 200px;
+  margin: 10px;
+  color: var(--main-bg-color);
+  font-size: 14px;
+  background-color: var(--golden-yellow);
+  background-image: linear-gradient(#fecc4c, #ffac33);
+  border-color: var(--golden-yellow);
+  border-width: 3px;
+}
+  })
+  .catch((err) => {
+   authorContainer.innerHTML = '<p class="error-msg">There was an error loading the authors</p>';
+  });
+
+const fetchMoreAuthors = () => {
+  startingIndex += 8;
+  endingIndex += 8;
+
+  displayAuthors(authorDataArr.slice(startingIndex, endingIndex));
+  if (authorDataArr.length <= endingIndex) {
+    loadMoreBtn.disabled = true;
+
+    loadMoreBtn.textContent = 'No more data to load';
+  }
+};
+
+const displayAuthors = (authors) => {
+  authors.forEach(({ author, image, url, bio }, index) => {
+    authorContainer.innerHTML += `
+    <div id="${index}" class="user-card">
+      <h2 class="author-name">${author}</h2>
+      <img class="user-img" src="${image}" alt="${author} avatar">
+      <div class="purple-divider"></div>
+      <p class="bio">${bio.length > 50 ? bio.slice(0, 50) + '...' : bio}</p>
+      <a class="author-link" href="${url}" target="_blank">${author} author page</a>
+    </div>
+  `;
+  });
+};
+
+loadMoreBtn.addEventListener('click', fetchMoreAuthors);rd arrows to move the player around.
+      </p>
+      <p class="instructions">You can also use the spacebar to jump.</p>
+
+      <div class="btn-container">
+        <button class="btn" id="start-btn">Start Game</button>
+      </div>
+    </div>
+
+    <div class="checkpoint-screen">
+      <h2>Congrats!</h2>
+      <p>You reached the last checkpoint.</p>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+rm: translate(-50%, -50%);
+  border-radius: 30px;
+  padding: 20px;
+  padding-bottom: 5px;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.instructions {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 15px;
+  line-height: 2rem;
+}
+
+.btn {
+  cursor: pointer;
+  width: 100px;
+  margin: 10px;
+  color: #0a0a23;
+  font-size: 18px;
+  background-color: var(--golden-yellow);
+  background-image: linear-gradient(#fecc4c, #ffac33);
+  border-color: var(--golden-yellow);
+  border-width: 3px;
+}
+
+.btn:hover {
+  background-image: linear-gradient(#ffcc4c, #f89808);
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkpoint-screen {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+  background-color: var(--section-bg-color);
+  border-radius: 20px;
+  padding: 10px;
+  display: none;
+}
+
+#canvas {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .start-screen {
+    width: 60%;
+    max-width: 700px;
+  }
+
+  .checkpoint-screen {
+    max-width: 300px;
+  }
+    }
 
